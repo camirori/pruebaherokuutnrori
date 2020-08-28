@@ -1,4 +1,8 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- 1- (app.component.html) Realizar:
+ una aplicacion que se le ingresen dos edades en dos cuadro de textos
+edadUno, EdadDos
+mostrar el promedio y la suma en dos cuadros de textos nuevos
+botones "calcular" y "limpiar cuadros de textos" -->
 <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
 <!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
@@ -317,6 +321,19 @@
 
 <div class="content" role="main">
 
+  <label>Edad uno:</label>
+  <input type="text" [(ngModel)]="edadUno"/> <br>
+  <label>Edad uno:</label>
+  <input type="text" [(ngModel)]="edadDos"/> <br>
+  <input type="button"  value="Calcular" ><br>
+  <input type="button"  value="limpiar cuadros de textos" ><br>
+  <label>Promedio: </label>{{promedio}}<br>
+  <label>Suma: </label>{{suma}}<br>
+
+ 
+
+
+
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
@@ -530,3 +547,4 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
+>
